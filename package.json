@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/fl1pHover/TheKnowMadz",
+  "homepage": "https://fl1pHover.github.io/KnowMadz",
   "name": "thenowmadz",
   "version": "0.1.0",
   "private": true,
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "[my-framework] build --output public",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
