@@ -1,0 +1,49 @@
+@import '../vars/vars';
+@import '../vars/flexCenter';
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	transition: $transition;
+	.container {
+		@include flexCenter(row, space-between);
+		padding: 10px 0;
+		background: transparent;
+		.nav__logo {
+			img {
+				width: 50px;
+			}
+		}
+		.nav__lists {
+			ul {
+				@include flexCenter(row, center);
+				gap: 40px;
+				a {
+					color: $color-text-purple;
+					font-size: 17px;
+					font-weight: 400;
+					transition: $transition;
+					&:hover {
+						color: $color-white;
+					}
+				}
+				.small__btn {
+					color: $color-white;
+				}
+			}
+		}
+	}
+}
+
+.bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1280px) {
+	// nav {
+	// 	padding: 10px 30px;
+	// }
+}
