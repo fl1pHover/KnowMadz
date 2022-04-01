@@ -5,20 +5,10 @@ window.addEventListener('scroll', function() {
 	var navbar = document.getElementById('nav');
 	navbar.classList.toggle('bg', window.scrollY > 0);
 });
-// const Navbar = () => {
-// 	const [color, setColor] = useState(false);
-// 	const changeColor = () => {
-// 		if (window.scroll >= 90) {
-// 			setColor(true);
-// 		} else {
-// 			setColor(false);
-// 		}
-// 	};
 
-// 	window.addEventListener('scroll', changeColor);
 const Navbar = () => {
 	return (
-		<nav id="nav">
+		<section id="nav">
 			<div className="container">
 				<div className="nav__logo">
 					<a href="#header">
@@ -47,7 +37,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</section>
 	);
 };
 

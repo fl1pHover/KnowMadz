@@ -1,14 +1,15 @@
-nav {
+#nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
 }
 
-nav .container {
+#nav .container {
+  width: 100%;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,14 +24,16 @@ nav .container {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
-  background: transparent;
 }
 
-nav .container .nav__logo img {
+#nav .container .nav__logo img {
   width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-nav .container .nav__lists ul {
+#nav .container .nav__lists ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +50,7 @@ nav .container .nav__lists ul {
   gap: 40px;
 }
 
-nav .container .nav__lists ul a {
+#nav .container .nav__lists ul a {
   color: #c185ff;
   font-size: 17px;
   font-weight: 400;
@@ -55,15 +58,25 @@ nav .container .nav__lists ul a {
   transition: 300ms ease;
 }
 
-nav .container .nav__lists ul a:hover {
+#nav .container .nav__lists ul a:hover {
   color: #fff;
 }
 
-nav .container .nav__lists ul .small__btn {
+#nav .container .nav__lists ul .small__btn {
   color: #fff;
 }
 
 .bg {
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+@media (max-width: 1280px) {
+  #nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=nav.css.map */
