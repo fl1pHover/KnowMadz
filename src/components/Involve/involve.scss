@@ -37,27 +37,12 @@
 		}
 	}
 }
-// @media (max-width: 1150px) {
-// 	#involve {
-// 		// background-size: 60%;
-// 		.content {
-// 			max-width: 65%;
-// 		}
-// 	}
-// }
-// @media (max-width: 1050px) {
-// 	#involve {
-// 		// background-size: 60%;
-// 		.content {
-// 			max-width: 60%;
-// 		}
-// 	}
-// }
-// @media (max-width: 900px) {
-// 	#involve {
-// 		// background-size: 60%;
-// 		.content {
-// 			max-width: 80%;
-// 		}
-// 	}
-// }
+
+@media (max-width: 900px) {
+	#involve {
+		// background-size: 60%;
+		.content {
+			max-width: 80%;
+		}
+	}
+}

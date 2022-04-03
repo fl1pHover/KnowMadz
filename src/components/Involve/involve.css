@@ -109,4 +109,10 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 900px) {
+  #involve .content {
+    max-width: 80%;
+  }
+}
 /*# sourceMappingURL=involve.css.map */
