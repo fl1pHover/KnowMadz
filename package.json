@@ -22,8 +22,8 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "deploy": "gh-pages -d build" ,
+    "start": "react-scripts start && pm2 start server.js --name \"3000 knwmdz.com\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
