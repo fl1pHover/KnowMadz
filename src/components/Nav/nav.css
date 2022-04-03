@@ -5,10 +5,10 @@
   width: 100%;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
+  z-index: 999;
 }
 
 #nav .container {
-  width: 100%;
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +23,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 20px 0 10px 0;
 }
 
 #nav .container .nav__logo img {
@@ -33,7 +33,13 @@
      object-fit: cover;
 }
 
-#nav .container .nav__lists ul {
+#nav .container .nav__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav .container .nav__lists .lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +56,7 @@
   gap: 40px;
 }
 
-#nav .container .nav__lists ul a {
+#nav .container .nav__lists .lists a {
   color: #c185ff;
   font-size: 17px;
   font-weight: 400;
@@ -58,12 +64,36 @@
   transition: 300ms ease;
 }
 
-#nav .container .nav__lists ul a:hover {
+#nav .container .nav__lists .lists a:hover {
   color: #fff;
 }
 
-#nav .container .nav__lists ul .small__btn {
+#nav .container .nav__lists .lists .small__btn {
   color: #fff;
+}
+
+#nav .container .nav__lists .menu {
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#nav .container .nav__lists .menu .menuIcon {
+  font-size: 35px;
+  color: #fff;
+}
+
+#nav #hidden {
+  max-width: 60vw;
+  height: 100vh;
+  background-color: black;
+  border: 1px solid gray;
+  position: fixed;
+  right: 0px;
+}
+
+#nav #hidden .hidden__lists li {
+  padding: 0 30px;
+  line-height: 80px;
 }
 
 .bg {
@@ -71,12 +101,18 @@
   z-index: 999;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 750px) {
   #nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+  }
+  #nav .container .nav__lists .lists {
+    display: none;
+  }
+  #nav .container .nav__lists .menu {
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=nav.css.map */

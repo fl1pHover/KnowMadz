@@ -7,11 +7,13 @@
 	left: 0;
 	width: 100%;
 	transition: $transition;
+	z-index: 999;
+	// padding: 10px 0;
 	.container {
-		width: 100%;
+		// width: 100%;
 		z-index: 999;
 		@include flexCenter(row, space-between);
-		padding: 10px 0;
+		padding: 20px 0 10px 0;
 		.nav__logo {
 			img {
 				width: 50px;
@@ -20,7 +22,8 @@
 			}
 		}
 		.nav__lists {
-			ul {
+			display: flex;
+			.lists {
 				@include flexCenter(row, center);
 				gap: 40px;
 				a {
@@ -36,6 +39,30 @@
 					color: $color-white;
 				}
 			}
+			.menu {
+				cursor: pointer;
+				visibility: hidden;
+				.menuIcon {
+					font-size: 35px;
+					color: $color-white;
+				}
+			}
+		}
+	}
+	#hidden {
+		max-width: 60vw;
+		height: 100vh;
+		background-color: black;
+		border: 1px solid gray;
+		position: fixed;
+		right: 0px;
+
+		.hidden__lists {
+			li {
+				padding: 0 30px;
+
+				line-height: 80px;
+			}
 		}
 	}
 }
@@ -45,11 +72,24 @@
 	z-index: 999;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 750px) {
 	#nav {
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 	}
+	#nav .container .nav__lists {
+		.lists {
+			display: none;
+			// flex-direction: column;
+			// transform: translateY(100%);
+		}
+		.menu {
+			visibility: visible;
+		}
+	}
+	// #hidden {
+	// 	transform: translateX(0);
+	// }
 }

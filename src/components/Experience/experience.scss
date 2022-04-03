@@ -22,7 +22,7 @@
 				height: 450px;
 				.card__left {
 					.card__img {
-						object-fit: cover;
+						object-fit: contain;
 						width: 85%;
 						margin-left: 4rem;
 						&.mg {
@@ -113,9 +113,9 @@
 }
 @media (max-width: 1150px) {
 	.horizontal__card {
-		height: 370px !important;
+		max-height: 370px;
 		.card__right {
-			height: 370px !important;
+			max-height: 370px;
 			justify-content: center !important;
 			padding: 0 30px 0px 60px !important;
 			li {
@@ -127,7 +127,7 @@
 		gap: 30px !important;
 		.vertical__card {
 			@include flexCenter(column, flex-start);
-			height: 500px !important;
+			max-height: 500px;
 			padding: 35px 50px 0px 50px !important;
 			.card__top {
 				.main__p {
@@ -141,10 +141,124 @@
 	}
 }
 @media (max-width: 1050px) {
+	// .horizontal__card {
+	// 	max-height: 350px;
+	// 	.card__right {
+	// 		max-height: 350px;
+	// 	}
+	// }
+}
+@media (max-width: 900px) {
 	.horizontal__card {
-		height: 350px !important;
+		max-height: 400px;
 		.card__right {
-			height: 350px !important;
+			max-height: 400px;
+		}
+		.card__left .card__img {
+			width: 95% !important;
+			margin-left: 2rem !important;
+		}
+	}
+	.vertical__card-div {
+		.vertical__card {
+			padding: 30px 35px 0px 35px !important;
+			.card__top {
+				.main__p {
+					margin: 10px 0 !important;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 750px) {
+	.horizontal__card {
+		display: flex !important;
+		flex-direction: column !important;
+		&.blossom__card,
+		&.green__card {
+			flex-direction: row !important;
+			.card__left {
+				flex: 35% !important;
+				.card__img {
+					max-width: 90%;
+				}
+			}
+		}
+		.card__right {
+			flex: 65% !important;
+		}
+		.card__left {
+			display: flex;
+			justify-content: center;
+			flex: 35% !important;
+			.card__img {
+				max-width: 45%;
+			}
+		}
+	}
+	.vertical__card-div {
+		grid-template-columns: repeat(1, 1fr) !important;
+		.vertical__card {
+			max-height: 400px;
+			.card__bottom {
+				img {
+					max-width: 50% !important;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 600px) {
+	.horizontal__card {
+		display: flex !important;
+		flex-direction: column !important;
+		// padding: 50px 0;
+		&.blossom__card,
+		&.green__card {
+			flex-direction: row !important;
+			.card__left {
+				flex: 25% !important;
+				.card__img {
+					max-width: 100%;
+				}
+			}
+		}
+		.card__right {
+			flex: 75% !important;
+		}
+		.card__left {
+			display: flex;
+			justify-content: center;
+			flex: 30% !important;
+			.card__img {
+				max-width: 60%;
+			}
+		}
+	}
+}
+@media (max-width: 540px) {
+	.horizontal__card {
+		display: flex !important;
+		flex-direction: column !important;
+		max-height: 500px;
+		height: 500px;
+		&.blossom__card {
+			max-height: 600px !important;
+			height: 600px !important;
+		}
+		&.blossom__card,
+		&.green__card {
+			flex-direction: column !important;
+			.card__left {
+				flex: 25% !important;
+				.card__img {
+					max-width: 40% !important;
+					max-height: 100%;
+					object-fit: contain;
+
+					margin-top: 2rem !important;
+				}
+			}
 		}
 	}
 }

@@ -23,8 +23,8 @@
 }
 
 #experience .container .cards .horizontal__card .card__left .card__img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 85%;
   margin-left: 4rem;
 }
@@ -156,10 +156,10 @@
 
 @media (max-width: 1150px) {
   .horizontal__card {
-    height: 370px !important;
+    max-height: 370px;
   }
   .horizontal__card .card__right {
-    height: 370px !important;
+    max-height: 370px;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
@@ -185,7 +185,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 500px !important;
+    max-height: 500px;
     padding: 35px 50px 0px 50px !important;
   }
   .vertical__card-div .vertical__card .card__top .main__p {
@@ -196,12 +196,158 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
   .horizontal__card {
-    height: 350px !important;
+    max-height: 400px;
   }
   .horizontal__card .card__right {
-    height: 350px !important;
+    max-height: 400px;
+  }
+  .horizontal__card .card__left .card__img {
+    width: 95% !important;
+    margin-left: 2rem !important;
+  }
+  .vertical__card-div .vertical__card {
+    padding: 30px 35px 0px 35px !important;
+  }
+  .vertical__card-div .vertical__card .card__top .main__p {
+    margin: 10px 0 !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .horizontal__card {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .horizontal__card.blossom__card, .horizontal__card.green__card {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .horizontal__card.blossom__card .card__left, .horizontal__card.green__card .card__left {
+    -webkit-box-flex: 35% !important;
+        -ms-flex: 35% !important;
+            flex: 35% !important;
+  }
+  .horizontal__card.blossom__card .card__left .card__img, .horizontal__card.green__card .card__left .card__img {
+    max-width: 90%;
+  }
+  .horizontal__card .card__right {
+    -webkit-box-flex: 65% !important;
+        -ms-flex: 65% !important;
+            flex: 65% !important;
+  }
+  .horizontal__card .card__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 35% !important;
+        -ms-flex: 35% !important;
+            flex: 35% !important;
+  }
+  .horizontal__card .card__left .card__img {
+    max-width: 45%;
+  }
+  .vertical__card-div {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .vertical__card-div .vertical__card {
+    max-height: 400px;
+  }
+  .vertical__card-div .vertical__card .card__bottom img {
+    max-width: 50% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .horizontal__card {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .horizontal__card.blossom__card, .horizontal__card.green__card {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .horizontal__card.blossom__card .card__left, .horizontal__card.green__card .card__left {
+    -webkit-box-flex: 25% !important;
+        -ms-flex: 25% !important;
+            flex: 25% !important;
+  }
+  .horizontal__card.blossom__card .card__left .card__img, .horizontal__card.green__card .card__left .card__img {
+    max-width: 100%;
+  }
+  .horizontal__card .card__right {
+    -webkit-box-flex: 75% !important;
+        -ms-flex: 75% !important;
+            flex: 75% !important;
+  }
+  .horizontal__card .card__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 30% !important;
+        -ms-flex: 30% !important;
+            flex: 30% !important;
+  }
+  .horizontal__card .card__left .card__img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 540px) {
+  .horizontal__card {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    max-height: 500px;
+    height: 500px;
+  }
+  .horizontal__card.blossom__card {
+    max-height: 600px !important;
+    height: 600px !important;
+  }
+  .horizontal__card.blossom__card, .horizontal__card.green__card {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .horizontal__card.blossom__card .card__left, .horizontal__card.green__card .card__left {
+    -webkit-box-flex: 25% !important;
+        -ms-flex: 25% !important;
+            flex: 25% !important;
+  }
+  .horizontal__card.blossom__card .card__left .card__img, .horizontal__card.green__card .card__left .card__img {
+    max-width: 40% !important;
+    max-height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: 2rem !important;
   }
 }
 /*# sourceMappingURL=experience.css.map */

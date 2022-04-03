@@ -39,4 +39,10 @@
 #banner .container .banner__content .medium__header .blossom__p {
   color: #ff249c;
 }
+
+@media (max-width: 900px) {
+  #banner {
+    height: 80vh;
+  }
+}
 /*# sourceMappingURL=banner.css.map */

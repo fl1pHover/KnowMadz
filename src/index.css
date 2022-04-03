@@ -78,6 +78,30 @@ div {
   }
 }
 
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .small__btn {
   background-color: #aa57ff;
   border: 3px solid #aa57ff;
@@ -159,6 +183,20 @@ div {
   }
   .medium__header {
     font-size: 40px;
+    line-height: 50px;
+  }
+  .main__p {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .big__header {
+    font-size: 52px;
+    line-height: 75px;
+  }
+  .medium__header {
+    font-size: 35px;
     line-height: 50px;
   }
   .main__p {
