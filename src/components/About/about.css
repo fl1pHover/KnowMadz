@@ -1,0 +1,174 @@
+.about__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: #aa57ff;
+  border: 3px solid #aa57ff;
+  border-radius: 2.5rem;
+  padding: 7px 45px;
+  color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  font-size: 22px;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border-color: #fff;
+}
+
+@media (max-width: 1050px) {
+  .btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .btn {
+    font-size: 16px;
+  }
+}
+
+#about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 200px 0;
+  text-align: center;
+}
+
+#about .container .purple__header {
+  width: 60%;
+  margin: 50px 0;
+}
+
+#about .container .title {
+  width: 75%;
+  margin: 20px 0;
+}
+
+#about .container .circle__box {
+  padding: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 5em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets//circleRgb.svg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets//circleRgb.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#about .container .circle__box .about__circle:nth-child(1) {
+  background-color: #04d4f9;
+  -webkit-box-shadow: 0 0 40px 1px rgba(4, 212, 249, 0.5);
+          box-shadow: 0 0 40px 1px rgba(4, 212, 249, 0.5);
+  width: 450px;
+  height: 450px;
+  padding: 0 50px;
+}
+
+#about .container .circle__box .about__circle:nth-child(2) {
+  background-color: #fa880c;
+  -webkit-box-shadow: 0 0 40px 1px rgba(250, 136, 12, 0.5);
+          box-shadow: 0 0 40px 1px rgba(250, 136, 12, 0.5);
+  width: 450px;
+  height: 450px;
+  padding: 0 50px;
+}
+
+#about .container .circle__box .about__circle:nth-child(3) {
+  background-color: #ff249c;
+  -webkit-box-shadow: 0 0 40px 1px rgba(255, 36, 156, 0.5);
+          box-shadow: 0 0 40px 1px rgba(255, 36, 156, 0.5);
+  width: 450px;
+  height: 450px;
+  padding: 0 50px;
+}
+
+#about .container .circle__box .about__circle:nth-child(4) {
+  background-color: #e5e301;
+  -webkit-box-shadow: 0 0 40px 1px rgba(229, 227, 1, 0.5);
+          box-shadow: 0 0 40px 1px rgba(229, 227, 1, 0.5);
+  width: 450px;
+  height: 450px;
+  padding: 0 50px;
+}
+
+#about .container .circle__box .about__circle .title {
+  color: #000;
+}
+
+.change__container {
+  position: relative;
+  padding: 8rem 0;
+  background-color: rgba(170, 87, 255, 0.2);
+}
+
+.change__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #000, inset 0px -50px 40px -10px #000;
+          box-shadow: inset 0px 0px 0px 0px #000, inset 0px -50px 40px -10px #000;
+}
+
+.change__container .change__content {
+  text-align: center;
+}
+
+.change__container .change__content .purple__header {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
+.change__container .change__content .change__box {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.change__container .change__content .change__box .change {
+  margin-top: 50px;
+}
+
+.change__container .change__content .change__box .change img {
+  margin-bottom: 30px;
+}
+
+.change__container .change__content .change__box .change .title {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=about.css.map */

@@ -42,6 +42,7 @@
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 #involve::before {
@@ -53,6 +54,7 @@
   height: 100%;
   -webkit-box-shadow: inset 0px 80px 78px -10px #000, inset 0px -80px 40px -10px #000;
           box-shadow: inset 0px 80px 78px -10px #000, inset 0px -80px 40px -10px #000;
+  z-index: -1;
 }
 
 #involve .container {
@@ -63,17 +65,24 @@
   color: #0be014;
 }
 
+#involve .container .btn__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #involve .container .btn__div .btn {
   background-color: #0be014;
   border: 3px solid #0be014;
   border-radius: 2.5rem;
-  padding: 10px 45px;
+  padding: 7px 45px;
   color: black;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   font-size: 22px;
   line-height: 2;
   font-weight: 600;
+  padding: 0 45px;
 }
 
 #involve .container .btn__div .btn:hover {
@@ -96,7 +105,7 @@
   background-color: black;
   border: 3px solid #0be014;
   border-radius: 2.5rem;
-  padding: 10px 45px;
+  padding: 7px 45px;
   color: #0be014;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
@@ -122,9 +131,46 @@
   }
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.input__field {
+  height: 100%;
+  padding: 0 30px;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
 @media (max-width: 900px) {
   #involve .content {
     max-width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px !important;
+  }
+  form .form__group {
+    width: 200px;
+    height: 50px;
+  }
+  form .btn {
+    width: 100% !important;
+  }
+  form .input__field {
+    height: 100%;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 17px;
   }
 }
 

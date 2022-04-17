@@ -3,10 +3,10 @@ import './experience.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Connection from '../../assets/experienceConnection.png';
-import Phone from '../../assets/experiencePhone.png';
-import Goal from '../../assets/experiencePhoneGoal.png';
-import World from '../../assets/experienceWorld.png';
-import Change from '../../assets/experienceChange.png';
+import Phone from '../../assets/experienceIMG/course.png';
+import Goal from '../../assets/experienceIMG/phone.png';
+import World from '../../assets/experienceIMG/zogsoolyu.png';
+import Change from '../../assets/experienceIMG/coreLeaders.png';
 
 const Experience = () => {
 	useEffect(() => {
@@ -66,7 +66,7 @@ const Experience = () => {
 							<h2 className="medium__header">
 								+150 цагийн сургалтын систем
 							</h2>
-							<p className="main__p">
+							<div className="main__p">
 								<ul>
 									<li>
 										Санхүүгийн боловсрол, мөнгөний
@@ -89,7 +89,7 @@ const Experience = () => {
 										Контент бүтээлт
 									</li>
 								</ul>
-							</p>
+							</div>
 						</div>
 					</div>
 					<div className="vertical__card-div">
