@@ -29,7 +29,7 @@ const Event = () => {
   return (
     <section id="about">
       <div className="container">
-        <h1 className="purple__header">What is Promly?</h1>
+        <h1 className="medium__header purple__header">What is Promly?</h1>
         <p className="title">
           Promly is a social enterprise, co-created with GenZ, that aims to
           unify a generation by empowering human connectedness and providing
@@ -62,13 +62,13 @@ const Event = () => {
             </p>
           </div>
         </div>
-        <h1 className="purple__header">
+        <h1 className="medium__header purple__header">
           Together, we will change outcomes and save lives.
         </h1>
       </div>
       <article className="change__container">
         <div className="change__content">
-          <h1 className="purple__header white">#MakeChange</h1>
+          <h1 className="medium__header purple__header white">#MakeChange</h1>
           <div className="change__box">
             {data.map(({ id, image, title, text }) => {
               return (
@@ -76,7 +76,6 @@ const Event = () => {
                   <img src={image} className="change__img" alt="" />
 
                   <h4 className="title">{title}</h4>
-
                   <p className="main__p">{text}</p>
                 </article>
               );

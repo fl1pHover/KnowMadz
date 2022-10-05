@@ -153,6 +153,30 @@
 
 .link {
   text-decoration: underline;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link .link__icon {
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.link:hover .link__icon {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 @media (max-width: 1150px) {

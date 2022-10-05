@@ -77,13 +77,17 @@
 
 #footer .container .footer__icons ul .icon {
   font-size: 35px;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
   color: #fff;
 }
 
-#footer .container .footer__icons ul .icon:hover {
-  color: #0be014;
+#footer .container .footer__icons ul .icon:hover svg {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+#footer .container .footer__icons ul .icon svg {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
 }
 
 @media (max-width: 1050px) {

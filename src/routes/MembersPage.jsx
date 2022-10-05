@@ -1,20 +1,19 @@
 import React from "react";
-
 import Navbar from "../components/Nav";
-import Work from "../components/Travel";
 import Footer from "../components/Footer";
+import Members from "../components/Members";
 
-// Loader and Animation
+// loader and animation
 import PageOut from "./PageOut";
 
-const Workpage = () => {
+const MembersPage = () => {
   return (
     <PageOut>
       <Navbar />
-      <Work />
+      <Members />
       <Footer />
     </PageOut>
   );
 };
 
-export default Workpage;
+export default MembersPage;

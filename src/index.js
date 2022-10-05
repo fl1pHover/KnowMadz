@@ -6,7 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import PageOut from "./routes/PageOut";
 import HomePage from "./routes/HomePage";
 import AboutPage from "./routes/AboutPage";
-import Workpage from "./routes/Workpage";
+import TravelsPage from "./routes/TravelsPage";
+import BosstalkPage from "./routes/BosstalkPage";
+import ContactPage from "./routes/ContactPage";
+import MembersPage from "./routes/MembersPage";
 // import HomePage from "./routes/HomePage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,7 +19,10 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/work" element={<Workpage />} />
+      <Route path="/travel" element={<TravelsPage />} />
+      <Route path="/bosstalk" element={<BosstalkPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/members" element={<MembersPage />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

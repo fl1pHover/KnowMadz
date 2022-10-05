@@ -1,20 +1,20 @@
 import React from "react";
 
 import Navbar from "../components/Nav";
-import Work from "../components/Travel";
+import Travel from "../components/Travel";
 import Footer from "../components/Footer";
-
-// Loader and Animation
+import PropagateLoader from "react-spinners/PropagateLoader";
+import { motion } from "framer-motion";
 import PageOut from "./PageOut";
 
-const Workpage = () => {
+const Travels = () => {
   return (
     <PageOut>
       <Navbar />
-      <Work />
+      <Travel />
       <Footer />
     </PageOut>
   );
 };
 
-export default Workpage;
+export default Travels;

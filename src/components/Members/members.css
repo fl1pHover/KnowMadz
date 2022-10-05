@@ -1,0 +1,199 @@
+#members {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 100px 0;
+  background: url(../../assets/rightCircleBlur.png);
+  background-position: 100% 0%;
+  background-size: auto 45%;
+  background-repeat: no-repeat;
+}
+
+#members .member__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  height: 100%;
+  text-align: left;
+  width: 1196px;
+}
+
+#members .member__container .purple__header {
+  margin-top: 50px;
+  font-size: 60px !important;
+}
+
+#members .member__container .sub__header {
+  margin: 20px 0;
+  text-align: center;
+  width: 70%;
+}
+
+#members .member__container .main__p {
+  width: 60%;
+  text-align: center;
+}
+
+#members .member__container .member__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: auto;
+  width: 100%;
+}
+
+#members .member__container .member__box .member__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+#members .member__container .member__box .member__profile:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#members .member__container .member__box .member__profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+#members .member__container .member__box .member__profile .team__name {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#members .member__container .member__box .member__profile .role {
+  color: #a6a3a3;
+}
+
+@media (max-width: 1280px) {
+  #members .member__container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  #members .member__container .member__box {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  #members .member__container .member__box .member__profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  #members .member__container .main__p {
+    width: 75%;
+    text-align: center;
+  }
+  #members .member__container .member__box .member__profile img {
+    width: 150px;
+    height: 150px;
+  }
+  .sub__header {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 750px) {
+  #members .member__container {
+    padding: 0 30px;
+  }
+  #members .member__container .main__p {
+    width: 80%;
+  }
+  #members .member__container .member__box .member__profile img {
+    width: 110px;
+    height: 110px;
+  }
+  .sub__header {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 550px) {
+  #members .member__container {
+    padding: 0 30px;
+  }
+  #members .member__container .main__p {
+    width: 100%;
+  }
+  #members .member__container .sub__header {
+    width: 80%;
+  }
+  #members .member__container .member__box {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #members .member__container .member__box .member__profile img {
+    width: 110px;
+    height: 110px;
+  }
+  .sub__header {
+    font-size: 41px;
+  }
+}
+
+@media (max-width: 450px) {
+  #members {
+    background-image: none;
+  }
+  #members .member__container {
+    padding: 0 20px;
+  }
+  #members .member__container .member__box {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #members .member__container .member__box .member__profile img {
+    width: 140px;
+    height: 140px;
+  }
+  #members .sub__header {
+    font-size: 37px;
+  }
+}
+/*# sourceMappingURL=members.css.map */

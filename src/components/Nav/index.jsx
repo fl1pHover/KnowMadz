@@ -4,10 +4,10 @@ import navLogo from "../../assets/Logos/knwmdzLogo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
-window.addEventListener("scroll", function() {
-  var navbar = document.getElementById("nav__container");
-  navbar.classList.toggle("bg", window.scrollY > 0);
-});
+// window.addEventListener("scroll", function() {
+//   var navbar = document.getElementById("nav__container");
+//   navbar.classList.toggle("bg", window.scrollY > 0);
+// });
 
 // let menutoggle = document.querySelector('.nav__links');
 // menutoggle.onclick = function() {
@@ -36,18 +36,20 @@ const Navbar = () => {
               {/* {toggleMenu && ( */}
               <ul className="lists">
                 <li>
-                  <Link to="/about">Бидний тухай</Link>
+                  {/* <Link to="/about">Бидний тухай</Link> */}
+                  <a href="#experience">Бидний тухай</a>
                 </li>
                 <li>
                   <a href="#event">Эвент</a>
                 </li>
                 <li>
-                  <a href="#team">Гишүүд</a>
+                  {/* <a href="#team">Гишүүд</a> */}
+                  <Link to="/members">Гишүүд</Link>
                 </li>
                 <li>
-                  <a href="#involve" className="btn small__btn">
+                  <Link to="/contact" className="btn small__btn">
                     Нэгдэх
-                  </a>
+                  </Link>
                 </li>
               </ul>
               {/* )} */}
@@ -70,12 +72,12 @@ const Navbar = () => {
               <a href="#event">Эвент</a>
             </li>
             <li>
-              <a href="#team">Гишүүд</a>
+              <Link to="/members">Гишүүд</Link>
             </li>
             <li>
-              <a href="#involve" className="btn small__btn">
+              <Link to="/contact" className="btn small__btn">
                 Нэгдэх
-              </a>
+              </Link>
             </li>
           </ul>
           {/* )} */}
